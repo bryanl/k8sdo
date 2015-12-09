@@ -1,5 +1,7 @@
 #!/bin/sh
 
+set -eo pipefail
+
 MASTER_PUBLIC_IP=$1
 MASTER_PRIVATE_IP=$2
 
