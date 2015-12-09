@@ -7,7 +7,7 @@ set -eo pipefail
 /bin/tar xzf /opt/kubernetes-1.1.2.tar.gz -C /opt
 /usr/bin/cp /opt/kubernetes-1.1.2/services/master/* /etc/systemd/system/
 cd /etc/systemd/system 
-/usr/bin/systemctl *.service
+/usr/bin/systemctl enable *.service
 /usr/bin/systemctl restart docker
 /usr/bin/systemctl restart kube-apiserver 
 /usr/bin/systemctl restart kube-controller-manager 
