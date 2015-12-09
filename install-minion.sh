@@ -14,3 +14,4 @@ cd /etc/systemd/system
 /usr/bin/systemctl restart kube-scheduler 
 /usr/bin/systemctl restart kube-proxy 
 /usr/bin/systemctl restart kubelet
+
